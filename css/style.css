@@ -208,8 +208,8 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
+}
 
 /* Mobile Styles-- Homepag -- */
 
@@ -217,11 +217,46 @@ footer .social-icons p {
   display:flex;
   justify-content: center;
 }
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins',Helvetica, Arial, sans-serif;
+  line-height: 2.688em;
+  font-weight: 500;
 
+}
+/* Aside */
 aside {
   display:flex;
   justify-content: center;
 }
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Features */
 
 .features {
   display:flex;
@@ -249,13 +284,15 @@ margin-bottom: 60px;
 margin: 0;
 }
 
+/* Reviews */
+
 .reviews {
   display:flex;
   justify-content: center;
 }
 
 .reviews h2 {
-
+  line-height: 30px;
 }
 
 .reviews h3 {
@@ -266,12 +303,12 @@ margin: 0;
 
 .misson {
   display:flex;
-  justify-content: cente
+  justify-content: center;
 }
 
 .contact-section {
   display:flex;
-  justify-content: cente
+  justify-content: center;
 }
  
 .contact-content p {
@@ -295,14 +332,17 @@ margin: 0;
 
 .faq h2 {
 margin: 40px;
+line-height: 1.875px;
 
 }
 
 .faq-content {
 margin-bottom: 50px;
-
 }
 
+.faq-content h4 {
+  line-height: 1.5;
+}
 
 .hidden,
 [hidden] {
@@ -381,6 +421,17 @@ margin-bottom: 50px;
 
 @media only screen and ( min-width: 768px) {
   /* Table styles here */
+/* General Styles  why no h1*/
+
+h2{
+  font-size: 2.25em;
+  line-height: 3;
+}
+
+h3{
+  font-size: 1.5em;
+  line-height: 1.875;
+}
 
   .content-wrapper {
     max-width: 640px;
@@ -403,7 +454,7 @@ margin-bottom: 50px;
   }
 
   header nav ul {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .header-divider {
@@ -424,7 +475,6 @@ aside .content-wrapper .form-description,
 aside .content-wrapper .form {
   width: 40%;
   margin: 0;
-
 }
 
 /*  Features */
@@ -466,14 +516,62 @@ footer .contact {
   margin-bottom: 0;
 }
 
+footer h4 {
+  font-size: 1.5em;
+}
+footer p {
+line-height: 1.125;
+}
+
 footer .copyright {
   width: 100%;
-
 }
 
-
+    /* About Page */
+.misson-content {
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
 }
 
+.mission-content p {
+ width: 45%;
+}
+
+.contact-section .content-wrapper h2 {
+ width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+/* ------Faq Page------ */
+.faq-content-wrapper {
+  display:flex;
+  justify-content:space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  margin: 50px 0;
+}
+
+.faq-content {
+  flex-basis: 45%
+}
+
+.faq h2 {
+  width: 100%;
+  margin: 40px;
+  line-height: 1.875px;
+}
+
+.faq-content h4 {
+  line-height: 1.5;
+}
+}
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
