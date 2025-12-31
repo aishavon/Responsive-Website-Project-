@@ -301,16 +301,15 @@ margin: 0;
 
                 /* About Page */
 
-.misson {
+.mission {
   display:flex;
   justify-content: center;
 }
-
 .contact-section {
   display:flex;
   justify-content: center;
 }
- 
+
 .contact-content p {
   margin: 0;
 }
@@ -528,7 +527,7 @@ footer .copyright {
 }
 
     /* About Page */
-.misson-content {
+.mission-content {
   display:flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -550,7 +549,7 @@ footer .copyright {
 }
 
 /* ------Faq Page------ */
-.faq-content-wrapper {
+.faq .content-wrapper {
   display:flex;
   justify-content:space-between;
   align-items: flex-start;
