@@ -100,27 +100,36 @@ textarea {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
 }
 
 ul, 
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   color: #e2e3ed;
   text-decoration: none;
+
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: 'poppins',sans-serif;
   font-size: 1.125em;
+  font-weight: 500;
+  margin: 20px 0;
+
 }
 
 p {
@@ -130,11 +139,11 @@ p {
 
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -142,7 +151,6 @@ address {
 }
 
  .content-wrapper {
-  outline: 3px dotted red;
   width: 90%;
   margin: 50px 0;
  }
@@ -161,6 +169,11 @@ address {
     flex-flow: row wrap;
     margin: 0;
   }
+
+   header figure {
+    width: 60%;
+  }
+
   .header-divider {
     background: #3a3a3a;
     width: 100%;
@@ -172,6 +185,7 @@ address {
     width: 60%;
     font-weight: 700;
     text-transform: uppercase;
+    font-size: 1.125;
   }
 
   header nav ul {
@@ -219,24 +233,31 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
   /* Mobile Styles-- Homepag -- */
 
+  header figure {
+    width: 60%;
+  }
+
   .hero-area {
     display:flex;
     justify-content: center;
+    background-image: url('../img/unplugged-retreat.jpg');
+    background-size: cover;
+    background-position: center;
   }
   .hero-area h1 {
     font-size: 2.25em;
     font-family: 'Poppins',Helvetica, Arial, sans-serif;
-    line-height: 2.688em;
+    line-height: 1.2;
     font-weight: 500;
-
   }
+
   /* Aside */
   aside {
+    background-color: #527158;
     display:flex;
     justify-content: center;
   }
@@ -272,11 +293,13 @@ address {
   .features {
     display:flex;
     justify-content: center;
+    background-image: url('../img/unplugged-retreat-features.jpg');
+    background-size: cover;
+    background-position: center;
   }
 
   .features h2 {
   margin-bottom: 60px;
-
   }
 
   .features article {
@@ -438,14 +461,18 @@ margin-bottom: 50px;
   /* Table styles here */
 /* General Styles  why no h1*/
 
+  header figure {
+    width: 30%;
+  }
+
 h2{
   font-size: 2.25em;
-  line-height: 3;
+  line-height: 1.33;
 }
 
 h3{
   font-size: 1.5em;
-  line-height: 1.875;
+  line-height: 1.25;
 }
 
   .content-wrapper {
@@ -580,36 +607,54 @@ footer .copyright {
 .faq h2 {
   width: 100%;
   margin: 40px;
-  line-height: 1.875px;
 }
 
-.faq-content h4 {
-  line-height: 1.5;
-}
+.faq h4,
+.faq p  {
+  font-size: 0.875px;
+  line-height: 1.125em;
 }
 
+}
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
 
-  .content-wrapper {
-  width: 960px;
+  header figure {
+    width: 30%;
+  }
+
+.content-wrapper {
+   max-width: 960px;
 }
 
 /* Header */
 
-  header {
+header {
   padding: 15px 0;
 }
+
+h2{
+    font-size: 2.25em;
+  }
+
+h3,
+h4 {
+      font-size: 1.875;
+    }
 
   /* Hero */
 
 .hero-area h1 {
   width: 80%;
+  font-size: 3.75em;
 }
-
+P {
+  font-size: 1.125em;
+  line-height: 1.333;
+}
 /* Aside */
 
-  aside .content-wrapper {
+aside .content-wrapper {
     justify-content: space-around;
   }
 
@@ -638,14 +683,21 @@ aside .content-wrapper .form {
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
   }
 
 /*  FAQ Page */
 
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
 
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
 }
 
 /* ==========================================================================
